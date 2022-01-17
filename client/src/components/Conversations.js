@@ -8,10 +8,10 @@ export default function Contacts() {
   const { contacts } = useContacts();
   const { conversations, selectedConversationIndex } = useConversations();
   const to_be_displayed = () => {
-    if (contacts.length === 0) {
+    if (conversations.length === 0) {
       return (
         <>
-          <h1>No Contacts</h1>
+          <div className="text-2xl font-bold">No Conversations</div>
           <AddContact />
         </>
       );

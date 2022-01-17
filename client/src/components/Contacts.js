@@ -8,7 +8,7 @@ export default function Contacts() {
     if (contacts.length === 0) {
       return (
         <>
-          <h1>No Contacts</h1>
+          <div className="text-2xl font-bold">No Contacts</div>
           <AddContact />
         </>
       );

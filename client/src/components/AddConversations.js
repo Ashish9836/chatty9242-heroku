@@ -31,7 +31,7 @@ const AddConversations = () => {
   return (
     <>
       <div className="flex-col flex flex-wrap mt-4 mb-4">
-        <Button variant="primary" onClick={handleShow}>
+        <Button variant = "primary" className="text-2xl bg-sky-300" onClick={handleShow}>
           New Conversations
         </Button>
       </div>
