@@ -36,7 +36,7 @@ const OpenConversation = ({ id }) => {
           flexWrap: "wrap",
         }}
       >
-        <h2 className="p-1">Messages</h2>
+        <div className="text-3xl font-bold">Messages</div>
         <div className="flex-col flex-wrap max-h-80  overflow-auto">
           {selectedConversation.messages.map((message, index) => {
             const lastMessage =
