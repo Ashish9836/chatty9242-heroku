@@ -58,7 +58,7 @@ const OpenConversation = ({ id }) => {
                         message.fromMe ? "green" : "sky"
                       }-400 p-1 rounded-lg bg-${
                         message.fromMe ? "green" : "sky"
-                      }-100 text-lg max-w-2xl`}
+                      }-100 text-lg`} style={{maxWidth:"30vw"}}
                     >
                       {message.text}
                     </div>
