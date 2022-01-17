@@ -54,13 +54,13 @@ const OpenConversation = ({ id }) => {
                     } `}
                   >
                     <div
-                      className={`border-2 border-${
+                      style={{width:"30vw",wordWrap:"break-word"}}
+                    >
+                      <span  className={`border-2 border-${
                         message.fromMe ? "green" : "sky"
                       }-400 p-1 rounded-lg bg-${
                         message.fromMe ? "green" : "sky"
-                      }-100 text-lg`} style={{maxWidth:"30vw"}}
-                    >
-                      {message.text}
+                      }-100 text-lg`}>{message.text}</span>
                     </div>
                   </div>
                   <div className={`text-xs font-medium text-${
