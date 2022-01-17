@@ -58,7 +58,7 @@ const OpenConversation = ({ id }) => {
                         message.fromMe ? "green" : "sky"
                       }-400 p-1 rounded-lg bg-${
                         message.fromMe ? "green" : "sky"
-                      }-100 text-base`}
+                      }-100 text-lg`}
                     >
                       {message.text}
                     </span>
@@ -82,7 +82,7 @@ const OpenConversation = ({ id }) => {
                 value={text}
                 onChange={(e) => setText(e.target.value)}
               />
-              <Button variant="primary" className="text-2xl bg-sky-700" type="submit">
+              <Button variant="primary" className="text-2xl bg-sky-500" type="submit">
                 Send Message
               </Button>
             </InputGroup>
