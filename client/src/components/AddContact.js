@@ -20,7 +20,7 @@ const AddContact = () => {
   return (
     <>
       <div className="flex-col flex flex-wrap mt-4 mb-4">
-        <Button variant="primary" className="text-2xl bg-sky-300" onClick={handleShow}>
+        <Button variant="primary" className="text-2xl bg-sky-700" onClick={handleShow}>
           New Contact
         </Button>
       </div>
@@ -55,16 +55,16 @@ const AddContact = () => {
                 required
               />
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button variant="primary" className="text-2xl bg-sky-700" type="submit">
               Submit
             </Button>
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="secondary" className="text-2xl bg-sky-700" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" className="text-2xl bg-sky-700" onClick={handleClose}>
             Save Changes
           </Button>
         </Modal.Footer>

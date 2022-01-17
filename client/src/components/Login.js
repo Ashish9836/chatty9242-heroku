@@ -71,10 +71,10 @@ const Login = ({ onSetID }) => {
             </Form.Text>
           </Form.Group>
           <div className="flex flex-wrap justify-center">
-            <Button variant="primary" type="submit" className="m-2">
+            <Button variant="primary" className="text-2xl bg-sky-700" type="submit" className="m-2">
               Submit
             </Button>
-            <Button variant="secondary" className="m-2 font-sky-600" onClick={handleCreate}>
+            <Button variant="secondary" className="text-2xl bg-sky-700" onClick={handleCreate}>
               Create new ID
             </Button>
           </div>

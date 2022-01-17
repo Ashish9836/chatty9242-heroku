@@ -31,7 +31,7 @@ const AddConversations = () => {
   return (
     <>
       <div className="flex-col flex flex-wrap mt-4 mb-4">
-        <Button variant = "primary" className="text-2xl bg-sky-600" onClick={handleShow}>
+        <Button variant = "primary" className="text-2xl bg-sky-700" onClick={handleShow}>
           New Conversations
         </Button>
       </div>
@@ -55,7 +55,7 @@ const AddConversations = () => {
                 </Form.Group>
               );
             })}
-            <Button variant="primary" className="bg-sky-600" type="submit">
+            <Button variant="primary" className="text-2xl bg-sky-700" type="submit">
               Submit
             </Button>
           </Form>

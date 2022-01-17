@@ -82,7 +82,7 @@ const OpenConversation = ({ id }) => {
                 value={text}
                 onChange={(e) => setText(e.target.value)}
               />
-              <Button variant="primary" className="text-2xl bg-sky-600" type="submit">
+              <Button variant="primary" className="text-2xl bg-sky-700" type="submit">
                 Send Message
               </Button>
             </InputGroup>
