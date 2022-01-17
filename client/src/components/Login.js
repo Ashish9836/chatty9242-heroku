@@ -3,7 +3,7 @@ import { Form, Button, Container } from "react-bootstrap";
 
 // for generating random id
 import { v4 as uuidv4 } from "uuid";
-
+import { style_login } from "./MySvg";
 const Login = ({ onSetID }) => {
   const [logID, setLogID] = useState("");
   const [error, setError] = useState("");
@@ -33,7 +33,7 @@ const Login = ({ onSetID }) => {
           "myapp-clone-Conversations",
           main_value["myapp-clone-Conversations"]
         );
-        console.log(localStorage)
+        console.log(localStorage);
       })
       .catch((err) => {
         console.log(err);
@@ -45,9 +45,19 @@ const Login = ({ onSetID }) => {
     onSetID(uuidv4());
     setLogID("");
   };
+
+ 
+
   return (
     <>
-      <h1 className="text-center">Login</h1>
+    <div className="p-4" style={style_login}>
+      <div className="flex flex-wrap justify-center">
+        <div>
+          <img src={logo} alt="" width="80px" height="80px" />
+        </div>
+        <div className="text-3xl font-bold">Chatty</div>
+      </div>
+      <div className="text-center text-3xl font-bold m-1">Login</div>
       <div className="m-1 bg-red-400 text-white-200" style={errStyle}>
         {error}
       </div>
@@ -71,15 +81,24 @@ const Login = ({ onSetID }) => {
             </Form.Text>
           </Form.Group>
           <div className="flex flex-wrap justify-center">
-            <Button variant="primary" className="text-2xl bg-sky-500 m-1" type="submit">
+            <Button
+              variant="primary"
+              className="text-2xl bg-sky-500 m-1"
+              type="submit"
+            >
               Login
             </Button>
-            <Button variant="secondary" className="text-2xl bg-sky-500 m-1" onClick={handleCreate}>
+            <Button
+              variant="secondary"
+              className="text-2xl bg-sky-500 m-1"
+              onClick={handleCreate}
+            >
               Create new ID
             </Button>
           </div>
         </Form>
       </Container>
+      </div>
     </>
   );
 };
