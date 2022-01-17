@@ -58,9 +58,9 @@ const OpenConversation = ({ id }) => {
                     >
                       <span  className={`border-2 border-${
                         message.fromMe ? "green" : "sky"
-                      }-400 p-1 rounded-lg bg-${
+                      }-200 p-1 rounded-lg bg-${
                         message.fromMe ? "green" : "sky"
-                      }-100 text-lg`}>{message.text}</span>
+                      }-200 text-lg`}>{message.text}</span>
                     </div>
                   </div>
                   <div className={`text-xs font-medium text-${
