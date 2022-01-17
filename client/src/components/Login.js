@@ -74,7 +74,7 @@ const Login = ({ onSetID }) => {
             <Button variant="primary" type="submit" className="m-2">
               Submit
             </Button>
-            <Button variant="secondary" className="m-2" onClick={handleCreate}>
+            <Button variant="secondary" className="m-2 font-sky-600" onClick={handleCreate}>
               Create new ID
             </Button>
           </div>
