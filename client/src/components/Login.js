@@ -50,14 +50,17 @@ const Login = ({ onSetID }) => {
 
   return (
     <>
-    <div className="p-4" style={style_login}>
+ 
       <div className="flex flex-wrap justify-center">
         <div>
           <img src={logo} alt="" width="80px" height="80px" />
         </div>
         <div className="text-3xl font-bold">Chatty</div>
       </div>
-      <div className="text-center text-3xl font-bold m-1">Login</div>
+
+
+      <div className="p-4" style={style_login}>
+      <div className="text-center text-4xl font-bold m-1">Login</div>
       <div className="m-1 bg-red-400 text-white-200" style={errStyle}>
         {error}
       </div>
@@ -67,7 +70,7 @@ const Login = ({ onSetID }) => {
           onSubmit={(e) => handleSubmit(e)}
         >
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label className="text-2xl sm:text-3xl">Your Id</Form.Label>
+            <Form.Label className="text-2xl sm:text-3xl font-bold">Your Id</Form.Label>
             <Form.Control
               type="text"
               placeholder="enter id here"
@@ -77,7 +80,7 @@ const Login = ({ onSetID }) => {
               }}
             />
             <Form.Text className="text-muted">
-              We'll never share your id with anyone else.
+             <span className="text-gray-800"> We'll never share your id with anyone else.</span>
             </Form.Text>
           </Form.Group>
           <div className="flex flex-wrap justify-center">
