@@ -53,15 +53,15 @@ const OpenConversation = ({ id }) => {
                       message.fromMe ? "right" : "left"
                     } `}
                   >
-                    <span
+                    <div
                       className={`border-2 border-${
                         message.fromMe ? "green" : "sky"
                       }-400 p-1 rounded-lg bg-${
                         message.fromMe ? "green" : "sky"
-                      }-100 text-lg`}
+                      }-100 text-lg max-w-2xl`}
                     >
                       {message.text}
-                    </span>
+                    </div>
                   </div>
                   <div className={`text-xs font-medium text-${
                       message.fromMe ? "right" : "left"
