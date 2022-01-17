@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
-
+import logo from "./chatty.png";
 // for generating random id
 import { v4 as uuidv4 } from "uuid";
 import { style_login } from "./MySvg";
